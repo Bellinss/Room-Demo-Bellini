@@ -94,6 +94,7 @@ fun ShowProverbLandscape(text: String, filter: String, onChangeName: (String) ->
                 trailingIcon = {
                     Icon(
                         Icons.Rounded.Search,
+                        tint = Color.White,
                         contentDescription = null,
                         modifier = Modifier
                             .size(iconSize, iconSize)
