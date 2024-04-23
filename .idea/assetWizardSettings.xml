@@ -80,9 +80,8 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="$USER_HOME$/Downloads/material-symbols--search.svg" />
-                                                <entry key="scalingPercent" value="59" />
-                                                <entry key="trimmed" value="true" />
+                                                <entry key="imagePath" value="$USER_HOME$/Downloads/emojione--books.png" />
+                                                <entry key="scalingPercent" value="53" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -114,7 +113,8 @@
                                   </option>
                                   <option name="values">
                                     <map>
-                                      <entry key="outputName" value="search_icon" />
+                                      <entry key="backgroundAssetType" value="COLOR" />
+                                      <entry key="backgroundColor" value="ffffff" />
                                     </map>
                                   </option>
                                 </PersistentState>
