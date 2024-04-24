@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Room Demo</string>
     <string name="message">Click Here🖊️</string>
-    <string name="title">"📚Proverbs by Bellins📚"</string>
+    <string name="titleLandscape">"📚   Proverbs by Bellins   📚"</string>
+    <string name="titlePortrait">"📚   Proverbs   📚 by Bellins"</string>
 </resources>

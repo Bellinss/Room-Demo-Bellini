@@ -50,11 +50,10 @@ fun ShowProverbPortrait(text: String, filter: String, onChangeName: (String) -> 
     ) {
         Column {
             Spacer(modifier = Modifier.height(30.dp))
-            Text(text = stringResource(id = R.string.title),
+            Text(text = stringResource(id = R.string.titlePortrait),
                 modifier = Modifier
                     .fillMaxWidth()
-                    .padding(smallPadding)
-                    .border(5.dp, Color.Red, RoundedCornerShape(15.dp)),
+                    .padding(smallPadding),
                 textAlign = TextAlign.Center,
                 fontSize = bigFontSizePortrait,
                 fontStyle = FontStyle.Italic,
@@ -75,9 +74,10 @@ fun ShowProverbPortrait(text: String, filter: String, onChangeName: (String) -> 
                         color = Color.White)
                 },
                 modifier = Modifier
+                    .height(90.dp)
                     .padding(smallPadding)
                     .fillMaxWidth()
-                    .border(3.dp, Color.White, RoundedCornerShape(15.dp)),
+                    .border(3.dp, Color.White, RoundedCornerShape(50.dp)),
                 keyboardOptions = KeyboardOptions(imeAction = ImeAction.Search),
                 keyboardActions = KeyboardActions(onSearch = {
                     keyboardController?.hide()
@@ -106,7 +106,7 @@ fun ShowProverbPortrait(text: String, filter: String, onChangeName: (String) -> 
             )
         }
 
-        Spacer(modifier = Modifier.height(190.dp))
+        Spacer(modifier = Modifier.height(130.dp))
 
         Text(
             text = if (text == "") {

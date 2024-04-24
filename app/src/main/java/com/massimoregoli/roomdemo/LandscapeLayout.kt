@@ -50,11 +50,10 @@ fun ShowProverbLandscape(text: String, filter: String, onChangeName: (String) ->
         modifier = Modifier.fillMaxSize()
     ) {
         Column {
-            Text(text = stringResource(id = R.string.title),
+            Text(text = stringResource(id = R.string.titleLandscape),
                 modifier = Modifier
-                    .width(775.dp)
-                    .padding(smallPadding)
-                    .border(5.dp, Color.Red, RoundedCornerShape(20.dp)),
+                    .fillMaxWidth()
+                    .padding(smallPadding),
                 textAlign = TextAlign.Center,
                 fontSize = bigFontSizeLandscape,
                 fontStyle = FontStyle.Italic,
