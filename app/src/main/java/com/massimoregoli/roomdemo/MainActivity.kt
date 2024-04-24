@@ -25,7 +25,7 @@ class MainActivity : ComponentActivity() {
 fun titleFont(): FontFamily {
     val assets = LocalContext.current.assets
     return FontFamily(
-        Font("TacOne-Regular.ttf", assets)
+        Font("pricedown bl.otf", assets)
     )
 }
 

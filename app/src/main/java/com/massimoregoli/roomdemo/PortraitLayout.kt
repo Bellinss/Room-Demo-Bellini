@@ -37,6 +37,7 @@ import com.massimoregoli.roomdemo.ui.theme.bigFontSizePortrait
 import com.massimoregoli.roomdemo.ui.theme.fontSizePortrait
 import com.massimoregoli.roomdemo.ui.theme.iconSize
 import com.massimoregoli.roomdemo.ui.theme.lineHeight
+import com.massimoregoli.roomdemo.ui.theme.mediumFontSizePortrait
 import com.massimoregoli.roomdemo.ui.theme.smallPadding
 
 @OptIn(ExperimentalComposeUiApi::class)
@@ -56,6 +57,17 @@ fun ShowProverbPortrait(text: String, filter: String, onChangeName: (String) -> 
                     .padding(smallPadding),
                 textAlign = TextAlign.Center,
                 fontSize = bigFontSizePortrait,
+                fontStyle = FontStyle.Italic,
+                color = Color(0xFFFFC107),
+                lineHeight = lineHeight,
+                fontFamily = titleFont()
+            )
+            Text(text = stringResource(id = R.string.subtitlePortrait),
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(smallPadding),
+                textAlign = TextAlign.Center,
+                fontSize = mediumFontSizePortrait,
                 fontStyle = FontStyle.Italic,
                 color = Color(0xFFFFC107),
                 lineHeight = lineHeight,
@@ -106,7 +118,7 @@ fun ShowProverbPortrait(text: String, filter: String, onChangeName: (String) -> 
             )
         }
 
-        Spacer(modifier = Modifier.height(130.dp))
+        Spacer(modifier = Modifier.height(110.dp))
 
         Text(
             text = if (text == "") {
