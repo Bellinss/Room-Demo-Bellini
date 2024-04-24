@@ -4,7 +4,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 val fontSizePortrait = 30.sp
-val bigFontSizePortrait = 48.sp
+val bigFontSizePortrait = 52.sp
 val mediumFontSizePortrait = 35.sp
 val fontSizeLandscape = 40.sp
 val bigFontSizeLandscape = 67.sp
