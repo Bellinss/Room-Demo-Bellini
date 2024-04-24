@@ -97,6 +97,8 @@ fun ShowProverbPortrait(text: String, filter: String, onChangeName: (String) -> 
                     onclick(filter)
                 }),
                 colors = TextFieldDefaults.colors(
+                    focusedIndicatorColor = Color.Transparent,
+                    unfocusedIndicatorColor = Color.Transparent,
                     unfocusedTextColor = Color.White,
                     focusedTextColor = Color.White,
                     focusedContainerColor = Color(0xFF00008B),
