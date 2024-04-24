@@ -3,11 +3,9 @@ package com.massimoregoli.roomdemo
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.defaultMinSize
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
@@ -76,7 +74,7 @@ fun ShowProverbLandscape(text: String, filter: String, onChangeName: (String) ->
                     .padding(smallPadding)
                     .width(755.dp)
                     .align(Alignment.End)
-                    .border(3.dp, Color.White, RoundedCornerShape(20.dp)),
+                    .border(3.dp, Color.Red, RoundedCornerShape(50.dp)),
                 keyboardOptions = KeyboardOptions(imeAction = ImeAction.Search),
                 keyboardActions = KeyboardActions(onSearch = {
                     keyboardController?.hide()
@@ -93,7 +91,7 @@ fun ShowProverbLandscape(text: String, filter: String, onChangeName: (String) ->
                 trailingIcon = {
                     Icon(
                         Icons.Rounded.Search,
-                        tint = Color.White,
+                        tint = Color.Red,
                         contentDescription = null,
                         modifier = Modifier
                             .size(iconSize, iconSize)
@@ -104,8 +102,6 @@ fun ShowProverbLandscape(text: String, filter: String, onChangeName: (String) ->
                 }
             )
         }
-
-        Spacer(modifier = Modifier.height(30.dp))
 
         Text(
             text = if (text == "") {
@@ -127,7 +123,7 @@ fun ShowProverbLandscape(text: String, filter: String, onChangeName: (String) ->
                 .padding(smallPadding * 2)
                 .defaultMinSize(minHeight = 80.dp)
                 .wrapContentHeight(align = Alignment.CenterVertically),
-            color = Color.Red,
+            color = Color.White,
             textAlign = TextAlign.Center,
             fontSize = fontSizeLandscape,
             fontStyle = FontStyle.Italic,

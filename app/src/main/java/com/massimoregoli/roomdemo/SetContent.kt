@@ -36,7 +36,7 @@ fun Content() {
             RoomDemoTheme {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
-                    color = Color.Black // MaterialTheme.colorScheme.background
+                    color = Color(0xFF00008B) // MaterialTheme.colorScheme.background
                 ) {
                     ShowProverbPortrait(proverb, filter, onChangeName = {filter=it}) {
                         CoroutineScope(Dispatchers.IO).launch {

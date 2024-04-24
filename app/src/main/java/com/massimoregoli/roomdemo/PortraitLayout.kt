@@ -57,7 +57,7 @@ fun ShowProverbPortrait(text: String, filter: String, onChangeName: (String) -> 
                 textAlign = TextAlign.Center,
                 fontSize = bigFontSizePortrait,
                 fontStyle = FontStyle.Italic,
-                color = Color.Red,
+                color = Color(0xFFFFC107),
                 lineHeight = lineHeight,
                 fontFamily = titleFont()
             )
@@ -77,7 +77,7 @@ fun ShowProverbPortrait(text: String, filter: String, onChangeName: (String) -> 
                     .height(90.dp)
                     .padding(smallPadding)
                     .fillMaxWidth()
-                    .border(3.dp, Color.White, RoundedCornerShape(50.dp)),
+                    .border(3.dp, Color(0xFFFFC107), RoundedCornerShape(50.dp)),
                 keyboardOptions = KeyboardOptions(imeAction = ImeAction.Search),
                 keyboardActions = KeyboardActions(onSearch = {
                     keyboardController?.hide()
@@ -87,14 +87,14 @@ fun ShowProverbPortrait(text: String, filter: String, onChangeName: (String) -> 
                 colors = TextFieldDefaults.colors(
                     unfocusedTextColor = Color.White,
                     focusedTextColor = Color.White,
-                    focusedContainerColor = Color.Black,
-                    unfocusedContainerColor = Color.Black
+                    focusedContainerColor = Color(0xFF00008B),
+                    unfocusedContainerColor = Color(0xFF00008B)
                 ),
                 textStyle = TextStyle.Default.copy(fontSize = fontSizePortrait, fontFamily = bodyFont()),
                 trailingIcon = {
                     Icon(
                         Icons.Rounded.Search,
-                        tint = Color.White,
+                        tint = Color(0xFFFFC107),
                         contentDescription = null,
                         modifier = Modifier
                             .size(iconSize, iconSize)
@@ -124,11 +124,11 @@ fun ShowProverbPortrait(text: String, filter: String, onChangeName: (String) -> 
 
                 .fillMaxWidth()
                 .padding(smallPadding)
-                .border(3.dp, Color.Yellow, RoundedCornerShape(15.dp))
+                .border(3.dp, Color(0xFFFFC107), RoundedCornerShape(15.dp))
                 .padding(smallPadding * 2)
                 .defaultMinSize(minHeight = 200.dp)
                 .wrapContentHeight(align = Alignment.CenterVertically),
-            color = Color.Yellow,
+            color = Color.White,
             textAlign = TextAlign.Center,
             fontSize = fontSizePortrait,
             fontStyle = FontStyle.Italic,
