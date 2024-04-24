@@ -74,8 +74,8 @@ fun ShowProverbLandscape(text: String, filter: String, onChangeName: (String) ->
                 },
                 modifier = Modifier
                     .padding(smallPadding)
-                    .width(755.dp)
-                    .align(Alignment.End)
+                    .width(600.dp)
+                    .align(Alignment.CenterHorizontally)
                     .border(3.dp, Color.Red, RoundedCornerShape(50.dp)),
                 keyboardOptions = KeyboardOptions(imeAction = ImeAction.Search),
                 keyboardActions = KeyboardActions(onSearch = {
